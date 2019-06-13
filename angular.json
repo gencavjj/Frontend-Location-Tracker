@@ -58,7 +58,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ng7-agm:build"
+            "browserTarget": "ng7-agm:build",
           },
           "configurations": {
             "production": {

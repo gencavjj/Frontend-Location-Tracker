@@ -2,9 +2,14 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+
 export const environment = {
+  apiBaseUrl: 'http://localhost:8080/api',
+  defaultNumberOfTableRows: 5,
+  securityEnabled: true,
   production: false
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
