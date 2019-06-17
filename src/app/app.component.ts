@@ -18,8 +18,8 @@ export class AppComponent implements OnInit {
   zoom = 8;
 
   // initial center position for the map
-  latitude = 34.34379;
-  longitude = -117.19548;
+  latitude = 36.3217;
+  longitude = -118.13116;
 
   constructor(private locationService: LocationService) {
 
