@@ -7,8 +7,10 @@
   style="width: 100vw; height: 90vh;"
   [fitBounds]="true"
   [latitude]="latitude" [longitude]="longitude" click='markerClick($event)'>
-
-  <agm-marker *ngFor="let place of locationHistory" [latitude]=place.latitude [longitude]=place.longitude
+  <agm-marker 
+    *ngFor="let place of locationHistory" 
+    [latitude]=place.latitude 
+    [longitude]=place.longitude
     [agmFitBounds]="true"
     title={{place.title}} (markerClick)="clickedMarker(place.latitude, place.longitude)">
     <agm-info-window><strong>{{place.date}}</strong></agm-info-window>

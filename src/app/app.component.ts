@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { LocationService } from './location.service';
 import { LocationMarker } from './location-marker';
 
-
 @Component({
   selector: 'app-root',
   styles: [' .agm-map-container { height: 200px;}'],
@@ -21,10 +20,8 @@ export class AppComponent implements OnInit {
   latitude = 34.85533;
   longitude = -118.49313;
 
-  constructor(private locationService: LocationService) {
-
-  }
-
+  constructor(private locationService: LocationService) {}
+  
   ngOnInit() {
     this.locationService.get().subscribe(data => {
       this.locationHistory = data;
