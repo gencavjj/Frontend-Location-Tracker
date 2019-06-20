@@ -15,11 +15,11 @@ export class AppComponent implements OnInit {
 
   title = 'ng7-agm';
   // google maps zoom level
-  zoom = 8;
+  zoom = 1;
 
   // initial center position for the map
-  latitude = 36.3217;
-  longitude = -118.13116;
+  latitude = 34.85533;
+  longitude = -118.49313;
 
   constructor(private locationService: LocationService) {
 
@@ -33,5 +33,5 @@ export class AppComponent implements OnInit {
     });
 
   }
-  //location = LOCATION_MARKER_DATA;
+
 }
