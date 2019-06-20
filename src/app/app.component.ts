@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
 
   title = 'ng7-agm';
   // google maps zoom level
-  zoom = 1;
+  zoom = 4;
 
   // initial center position for the map
   latitude = 34.85533;

@@ -1,11 +1,16 @@
-<h3>Tom Hikes the PCT</h3>
+<h3>Tom Hikes the PCT!!!</h3>
 
 <!-- this creates a google map on the page with the given lat/lng from -->
 <!-- the component as the initial center of the map: -->
 
-<agm-map [latitude]="latitude" [longitude]="longitude" click='markerClick($event)'>
+<agm-map 
+  style="width: 100vw; height: 90vh;"
+  [fitBounds]="true"
+  [latitude]="latitude" [longitude]="longitude" click='markerClick($event)'>
+
   <agm-marker *ngFor="let place of locationHistory" [latitude]=place.latitude [longitude]=place.longitude
+    [agmFitBounds]="true"
     title={{place.title}} (markerClick)="clickedMarker(place.latitude, place.longitude)">
-    <agm-info-window><strong>{{place.time}}</strong></agm-info-window>
+    <agm-info-window><strong>{{place.date}}</strong></agm-info-window>
   </agm-marker>
 </agm-map>
